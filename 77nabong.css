@@ -1,15 +1,3 @@
-/* sort by Beautify */
-
-/*
-** Github : http://github.com/ingether/TGD-CSS/
-** assets : http://github.com/ingether/resource/
-** Copyright(c) 2017-2019 All rights reserved by nanajam777 (contact: friendshiping777@gmail.com)
-**
-** 잉게더는 트게더의 커스텀 CSS 운영정책을 존중합니다.
-**
-** 관련 문의 ingether@hotmail.com
-*/
-
 @import url("https://ingether.github.io/TGD-CSS-ANON/CSS/common.css");
 
 @font-face {
@@ -303,7 +291,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "잉게더에 오신 것을 환영합니다!";
+    content: "잉게더에 오신 것을 환영한니다!";
     cursor: text;
     font-size: 14px;
 }
