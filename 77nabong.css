@@ -291,7 +291,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #board-info #viewers-area #viewers:before {
-    content: "잉게더에 오신 것을 환영한니다!";
+    content: "잉게더에 오신 걸! 뽀이!";
     cursor: text;
     font-size: 14px;
 }
