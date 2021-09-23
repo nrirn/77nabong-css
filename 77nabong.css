@@ -1,510 +1,353 @@
-@import url("https://ingether.github.io/TGD-CSS-ANON/CSS/common.css");
-
-@font-face {
-    font-family: 'BRRA_R';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRRA_R.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* @todo: replace to thumbnail for optimizing data */
 :root {
-    --img-main: url("https://ingether.github.io/resource/image/main.png");
-    --img-logo: url("https://ingether.github.io/resource/image/title.png");
+    --color0: #99ccff;
+    --color1: #70b7ff;
+    --color2: #0099ff;
+    --color3: #96c7f7;
+    --color4: #ffd000; 
+    --color5: #ffb300; 
+    --color6: #99dd77; 
+    --color7: #66a757;
 
-    --bg-img1: url("https://ingether.github.io/resource/emoji/112/ok.gif");
-    --bg-img2: url("https://ingether.github.io/resource/emoji/112/ace.gif");
-    --bg-img3: url("https://ingether.github.io/resource/emoji/112/appear.gif");
-    --bg-img4: url("https://ingether.github.io/resource/emoji/112/clap.gif");
-    --bg-img5: url("https://ingether.github.io/resource/emoji/112/salute.gif");
-    --bg-img6: url("https://ingether.github.io/resource/emoji/112/boq.gif");
-    --bg-img7: url("https://ingether.github.io/resource/emoji/112/taebo.gif");
-    --bg-img8: url("https://ingether.github.io/resource/emoji/112/sg.gif");
-    --bg-img9: url("https://ingether.github.io/resource/emoji/112/sexy.gif");
-    --bg-img10: url("https://ingether.github.io/resource/emoji/112/bang.gif");
-    --bg-img11: url("https://ingether.github.io/resource/emoji/112/hamo.gif");
-    --bg-img12: url("https://ingether.github.io/resource/emoji/112/dw.gif");
-    --bg-img13: url("https://ingether.github.io/resource/emoji/112/kkk.gif");
-    --bg-img14: url("https://ingether.github.io/resource/emoji/112/wink.gif");
-    /* --bg-img15: url("https://ingether.github.io/resource/emoji/112/light.png"); */
+    --img-badge: url("https://ingether.github.io/resource/image/badge18.png");
+    --img-totop: url("https://ingether.github.io/resource/image/movetotop.png");
 }
 
-/* 배경 그라디언트 */
-html {
-    height: auto !important;
-    background: linear-gradient(to bottom, #ffffff, #d0e6fc, #70b7ff);
-}
-
-body {
-    background: transparent;
-}
-
-/* 프로필 이미지 트랜지션  */
-.img-circle:hover {
-    border-radius: 20%;
-    transition: all ease-in-out .1s;
-}
-
-/* 헤더 상단 조절 */
-header #header-bar {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-/* 헤더 상단 바  */
-header #header-bar>.row {
-    background: linear-gradient(-45deg, #70b7ff, #99ccff, #d4eeff, #d0e6fc);
-    background-size: 400% 400%;
-    animation: background-pos 20s ease infinite;
-    -moz-animation: background-pos 20s ease infinite;
-    -webkit-animation: background-pos 20s ease infinite;
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
-    border: none;
-}
-
-/* 트게더 메인으로 */
-header .row>div:nth-child(1)>a {
+/* change popular posts' icon */
+span.a-badge i.fa.fa-star {
+    opacity: 100;
+    color: rgba(95, 02, 22, 0);
+    vertical-align: 2px !important;
+    width: 15px;
+    height: 15px;
     background-repeat: no-repeat;
-    background-image: var(--img-main);
-    background-size: 120px;
-    width: 120px;
-    height: 40px;
-    display: block;
-    margin-top: 2em;
+    background-size: 15px 15px;
+    background: var(--img-badge);
+    animation: infinite rot360 1.2s;
 }
 
-header .row>div:nth-child(1)>a img {
-    display: none;
+/* keyframe animations */
+@keyframes ingether {
+    0% {
+        color: #6441a5;
+    }
+
+    40% {
+        color: #0099ff; 
+    }
+
+    100% {
+        color: #6441a5; 
+    }
+}
+ 
+@keyframes AnimFeed {
+    0% {
+        background-color: #ffffff;
+    } 
+
+    40% {
+        background-color: #d4eeff;
+    }
+
+    100% {
+        background-color: #ffffff; 
+    }
 }
 
-/* 타이틀 이미지  */
-.col-xs-4:nth-child(1):before {
-    content: var(--img-logo);
-    left: 428px;
-    top: 10px;
-    position: absolute;
+@keyframes rot360 {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
 }
 
-.fa-user:before {
-    display: none;
+/* go to top */
+#movetotop img {
+    display: none
 }
 
-/* 검색창  */
-header #right-search-form>#right-search-btn {
-    color: #70b7ff;
-    background: transparent;
-    border: none;
-    font-size: 1.4em;
-}
-
-header #right-search-form>input[type=text] {
-    position: relative;
-    border: 3px solid #70b7ff;
-    background: #fff;
-    font-size: 1.1em;
-    padding: 0.3em 0.5em;
-}
-
-/* 닉네임, 댓글 수 컬러링 */
-#article-reply-area #reply-real-area .reply>.reply-header>.reply-writer.logged,
-#article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
-#article-list>.article-list-row>.item>.list-title>small.comment-count,
-#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
-    color: #4078b1;
-}
-
-/* 트게더 전광판 */
-header #header-bar #header-top-notice strong.notice-badge {
-    background: #0099ff;
-    padding: 4px 8px;
-    color: #fff;
-    font-weight: bold
-}
-
-/* 읽은 게시글 숨기기 버튼 */
-#article-list #article-option-area>#article-option-area-toggle-btn {
-    position: relative;
-    right: 14px;
-    background-color: transparent;
-    border: 2px #99ccff;
-    color: blue;
-}
-
-/* 트게더 메뉴 버튼 패딩 추가 */
-#main .menu-wrapper>a {
-    padding: 8px 3px
-}
-
-/* 트게더 메뉴 버튼 테두리  */
-#main .menu-wrapper {
-    border: 2px solid #99ccff
-}
-
-/* 트게더 메뉴 마우스 오버 애니메이션 */
-#main .menu-wrapper>a:hover {
-    background-color: #dddddd;
-    transition: all ease-in-out .1s;
-}
-
-/* 트게더 메뉴 구성요소 */
-#main .menu-wrapper>a>em {
-    color: #99ccff;
-}
-
-#main .menu-wrapper>a>i.fa.fa-square {
-    color: #99ccff;
-}
-
-/* 메인 프레임 테두리  */
-#main #main-content>div.frame {
-    border-radius: 0px 0px 15px 15px;
-    border: 2px solid #99ccff
-}
-
-/* 게시글 패딩 */
-#article-list>.article-list-row>.item>.list-time,
-#article-list>.article-list-row>.item>.list-title,
-#article-list>.article-list-row>.item>.list-header,
-#article-list>.article-list-row>.item>.list-blocked,
-#article-list>.article-list-row>.item>.list-category,
-#article-list>.article-list-row>.item>.list-checkbox {
-    padding: 10px 0 10px 0;
-    vertical-align: middle;
-}
-
-
-/* nav box category distribute */
-#main .menu-wrapper .spacer {
-    background: rgba(95, 02, 22, 0);
-    height: 4px;
-}
-
-/* 트게더 메뉴 카테고리 헤더 */
-/* #main .menu-wrapper > .header {
-    background: -webkit-linear-gradient(45deg, #70b7ff 10%,#96c7f7 100%);
-    color: #fff; padding: 0.45em 1.4em 0.45em 1em; font-weight: bold; border-radius: 10px 10px 0 0;
-} */
-#main .menu-wrapper>.header {
-    background: #99ccff;
-    color: #ffffff;
-    padding: 9px 12px
-}
-
-/* 공지 포스트 마우스 호버 */
-#article-list>.article-list-row.notice {
-    transition: all ease-in-out .1s;
-}
-
-#article-list>.article-list-row.notice:hover {
-    background-color: #d4eeff;
-    transition: all ease-in-out .1s;
-}
-
-/* hot post background */
-#article-list>.article-list-row.hot {
-    background-color: aliceblue;
-}
-
-#article-list>.article-list-row.hot>.item>.list-title>a:hover {
-    color: black !important;
-}
-
-#article-content-wrapper>.header {
-    border-top: 3px solid #0099ff;
-    background: #d4eeff;
-}
-
-#article-content-wrapper>.footer {
-    border-bottom: 3px solid #0099ff;
-    background: #d4eeff;
-}
-
-#article-list #article-list-category>a {
+#movetotop {
     display: inline-block;
-    padding: 14px 18px;
-    background: #d4eeff;
-    text-decoration: none;
-    font-size: 12px;
+    opacity: 1;
+    background: var(--img-totop);
+    width: 80px;
+    height: 80px;
+    background-size: contain;
 }
 
-#article-list #article-list-category>a:hover {
-    background: #99ccff;
-    transition: all ease-in-out .2s;
+/* 드롭다운 트랜지션 */
+.dropdown.open .dropdown-menu,
+.input-group-btn.open .dropdown-menu {
+    opacity: unset;
+    transform: unset;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.dropdown .dropdown-menu,
+.input-group-btn .dropdown-menu {
+    display: block !important;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: top;
+    transition: all 0.3s cubic-bezier(0.2, 1.5, 0, 1);
+    padding: 8px 0 3px 0px;
+}
+
+.dropdown-menu>li>a {
+    transition: .1s;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    transform: scaleX(1.04);
+    transition: .1s;
+}
+
+/* 페이지 하단  */
+/* 페이지 버튼 - 일반  */
+.pagination>li>a,
+.pagination>li>span {
+    color: white;
+    border: none;
+    background-color: var(--color0);
+}
+
+/* 페이지버튼 - 포커스, 마우스오버 */
+.pagination>li>a:hover,
+.pagination>.active>a,
+.pagination>.active>a:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span,
+.pagination>.active>span:hover,
+.pagination>.active>span:focus {
+    color: white;
+    background-color: var(--color1);
+    transition: all ease-in-out .1s;
+}
+
+/* 검색창필드 */
+div #article-list #boardSearchForm {
+    width: 100%;
+    max-width: 450px;
+    margin: 20px auto;
+    background: var(--color3);
+    padding: 2px 2px;
+    border-radius: none !important;
+}
+
+div #article-list #boardSearchForm .btn,
+div #article-list #boardSearchForm input {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    border: 0;
+}
+
+div #article-list #boardSearchForm input {
+    background: #ffffff;
+    padding-left: -3px;
+    padding-right: -3px;
+    border-left: 8px solid var(--color3);
+    border-right: 8px solid var(--color3);
+    border-radius: none !important;
+}
+
+
+/* 버튼 전체 */
+/* 기본 버튼 */
+.btn {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 0px;
+    border: none;
+    position: relative;
+    min-width: 80px;
+    /* min-height: 32px; */
+    /* font-weight: 700; */
+    cursor: pointer;
+    transition: 500ms ease all;
+    outline: none;
+}
+
+.btn>span {
+    /* font-size: 12pt; */
     color: white !important;
 }
 
-/* category background */
-#article-list #article-list-category {
-    border-top: 0px;
-    border-bottom: 3px solid #99ccff;
-    background-color: #ffffff;
-
+.btn:hover {
+    background: #fff;
+    border: none;
+    outline: none;
 }
 
-#article-reply-area #reply-real-area .reply>.reply-header {
-    background: #d4eeff;
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    transition: 200ms ease all;
 }
 
-#article-reply-area>.header h5 {
-    font-size: 14px;
-    color: #0099ff;
-    font-weight: bold;
+.btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
 }
 
-/* like highlighter */
-#article-list>.article-list-row>.item>.list-header>span {
-    background-color: transparent;
-    color: #0099ff;
-    font-weight: 100;
-    font-size: 14px;
-    font-family: 'BRRA_R';
+.btn:hover:before,
+.btn:hover:after {
+    width: 100%;
+    transition: 500ms ease all;
 }
 
-#board-info {
-    height: auto;
+/* 인기글 버튼 */
+.btn.best {
+    background: var(--color4) !important;
+    color: #fff !important;
 }
 
-#board-info h1>a {
-    font-weight: 600;
-    font-family: 'BRRA_R';
+.btn.best:hover>span {
+    color: var(--color4) !important;
 }
 
-#board-info h1>a:nth-child(1) {
-    font-size: 34px;
+.btn.best:hover {
+    background: #fff !important;
+    color: var(--color4) !important;
 }
 
-#board-info h1>a:hover {
-    color: #29ABE2;
-    font-weight: 700;
-    transition: all 150ms ease-in-out;
-
+.btn.best:before,
+.btn.best:after {
+    background: var(--color4);
 }
 
-/* viewers */
-#board-info #viewers-area #viewers {
-    color: #326eaa;
-    font-weight: 400;
-    font-family: 'BRRA_R';
-    font-size: 0px;
+/* 글쓰기 버튼 */
+.btn-primary {
+    background: var(--color3);
+    color: #fff !important;
 }
 
-#board-info #viewers-area #viewers:before {
-    content: "잉게더에 오신 걸! 뽀이!";
-    cursor: text;
-    font-size: 14px;
+.btn-primary>span {
+    color: white !important;
 }
 
-#board-info #viewers-area #viewers:after {
-    content: "명 행복행복";
-    cursor: text;
+.btn-primary:hover>span {
+    color: var(--color3) !important;
+}
+
+.btn-primary:hover {
+    background: #fff;
+    color: var(--color3) !important;
+}
+
+.btn-primary:before,
+.btn-primary:after {
+    background: var(--color3);
+}
+
+/* 인기글 목록보기  */
+#showResultVoteBtn.btn-default {
+    background: var(--color6) !important;
+    color: white !important;
+}
+
+#showResultVoteBtn.btn-default>span {
+    color: white !important;
+}
+
+#showResultVoteBtn.btn-default:hover>span {
+    color: var(--color6) !important;
+}
+
+#showResultVoteBtn.btn-default:hover {
+    color: var(--color6) !important;
+    background: white !important;
+}
+
+#showResultVoteBtn.btn-default:before,
+#showResultVoteBtn.btn-default:after {
+    background: var(--color6);
+}
+
+/* 하단 검색창 버튼 */
+.input-group-btn>.btn {
+    background: var(--color1) !important;
+    color: #fff !important;
+    min-width: 0px !important;
+}
+
+.input-group-btn>.btn>span {
+    color: white !important;
+}
+
+.input-group-btn>.btn:hover>span {
+    color: var(--color1) !important;
+}
+
+.input-group-btn>.btn:hover {
+    background: #fff !important;
+    color: var(--color1) !important;
+}
+
+/* 끄기 */
+.input-group-btn>.btn::after,
+.input-group-btn>.btn::before {
+    content: none !important;
 }
 
 
-/* profile border */
-#board-info #board-info-profile-img {
-    border: 2px solid #0099ff;
-    border-radius: 30%;
-    width: 50px;
-    height: 50px;
+/* 좋아요 버튼  */
+.vote-area>.btn-outline-success {
+    background: var(--color1) !important;
+    width: 80px !important;
+    height: 60px !important;
+    font-size: 0 !important;
+    font-weight: 700 !important;
+    padding: 0 2em !important;
+    outline: none !important;
 }
 
-#board-info #board-info-bottom a {
-    color: #4078b1;
-    font-weight: 400;
-    font-family: 'BRRA_R';
-    font-size: 14px;
-    margin: .1em;
+.vote-area>.btn-outline-success>span {
+    font-size: 12pt;
+    color: white !important;
 }
 
-/* 키프레임 */
-@-webkit-keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
+.vote-area>.btn-outline-success:hover>span {
+    font-size: 14pt;
+    color: var(--color1) !important;
 }
 
-@-moz-keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
+.vote-area>.btn-outline-success:hover {
+    background: #fff !important;
+    color: var(--color1) !important;
 }
 
-@keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
+.vote-area>.btn-outline-success:before,
+.vote-area>.btn-outline-success:after {
+    background: var(--color1);
 }
 
-/** 글작성 후 보이는 이미지 수정**/
-.fr-emoticon.fr-deletable>img[alt=JKanStyle] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img1);
-    background-size: 100%;
+.btn-outline-danger {
+    color: #d9534f !important;
+    background-image: none !important;
+    background-color: white !important;
+    border:solid 1px #d9534f !important;
 }
 
-.fr-emoticon.fr-deletable>img[alt=OptimizePrime] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img2);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=StoneLightning] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img3);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=TheRinger] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img4);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=RedCoat] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img5);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=Kappa] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img6);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=JonCarnage] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img7);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=BCWarrior] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img8);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=GingerPower] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img9);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=DansGame] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img10);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=SwiftRage] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img11);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=PJSalt] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img12);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=KevinTurtle] {
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img13);
-    background-size: 100%;
-}
-
-.fr-emoticon.fr-deletable>img[alt=ArsonNoSexy] {
-    width: 224px !important;
-    height: 224px !important;
-    padding-left: 224px !important;
-    background-image: var(--bg-img14);
-    background-size: 100%;
-}
-
-/* .fr-emoticon.fr-deletable > img[alt=SMOrc]{ 
-    width: 112px !important;
-    height: 112px !important;
-    padding-left: 112px !important;
-    background-image: var(--bg-img15);
-    background-size: 100%; 
-} */
-
-/* Anoningether  */
-
-img,
-#article-info #article-info-writer,
-#article-neighbor-list > div > span.author,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer-image, 
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer-image,
-#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, 
-#article-reply-area #reply-best-area .reply > .reply-header > .reply-writer.logged
-{
-    display: none;
-}
-
-#article-list > .article-list-row > .item > .list-title > .list-writer.logged > span {
-    font-size: 0pt;
-    width: 20px;
-}
-
-header #header-bar #header-menu-right #userDropdown img.profile-img,
-img[src="https://static-cdn.jtvnw.net/chat-badges/broadcaster.png"] {
-    display: inline !important;;
-}
-
-#board-info h1 .badge {
-    display: none;
+.btn-outline-danger:hover {
+    color: white !important;
+    background-image: none !important;
+    background-color: #d9534f !important;
+    border: solid 1px white !important;
 }
