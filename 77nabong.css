@@ -24,8 +24,8 @@ body {
 
 /* 프로필 이미지 트랜지션  */
 .img-circle:hover {
-    border-radius: 5%;
-    transition: all ease-in-out .1s;
+    border-radius: 2%;
+    transition: all ease-in-out 1s;
 }
 
 /* 헤더 상단 조절 */
@@ -322,53 +322,4 @@ header #header-bar #header-top-notice strong.notice-badge {
     100% {
         font-size: 14px
     }
-}
-
-
-/* 키프레임 */
-@-webkit-keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
-}
-
-@-moz-keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
-}
-
-@keyframes background-pos {
-    0% {
-        background-position: 0 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0 50%
-    }
-}
-
-
-#board-info h1 .badge-success {
-    display: none;
 }
