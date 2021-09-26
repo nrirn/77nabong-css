@@ -50,17 +50,17 @@ img#board-info-profile-img:hover {
 
 /* 상단 검색창 */
 header #right-search-form>input[type=text] {
- border-color:#5b6770;
+ border-color:#1a77d5;
  border-radius:0.4em;
  font-size: 14px;
 }
 
 header #right-search-form>input[type=text]::placeholder {
- color:#5b6770 !important;
+ color:#1a77d5 !important;
 }
 
 header #right-search-form>input[type=text]:focus {
- box-shadow:0 0 20px #5b6770 !important;
+ box-shadow:0 0 20px #1a77d5 !important;
 }
 
 header #right-search-form>input[type=text]:focus::placeholder {
@@ -68,7 +68,7 @@ header #right-search-form>input[type=text]:focus::placeholder {
 }
 
 header #right-search-form>#right-search-btn {
- color:#5b6770 !important;
+ color:#1a77d5 !important;
 }
 
 
@@ -99,9 +99,9 @@ header #header-bar>.row {
 
 
 #article-content-wrapper>.header{
-  background-color:#5b6770;
+  background-color:#1a77d5;
   border-radius: 10px 10px 0px 0px;
-  border-color: #5b6770
+  border-color: #1a77d5
 }
 
 
@@ -111,16 +111,16 @@ header #header-bar>.row {
 /* 헤더 */
 #article-list>.article-list-row:nth-of-type(2),
 header #header-bar>.row {
- border-top-color:#5b6770
+ border-top-color:#1a77d5
 }
 
 a:hover,
 header #header-bar a.dropdown-toggle {
- color:#5b6770
+ color:#1a77d5
 }
 
 header #header-bar #header-top-notice strong.notice-badge {
-    background: #5b6770;
+    background: #1a77d5;
     padding: 4px 6px;
     color: #fff;
     font-weight: bold
@@ -133,7 +133,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #main .menu-wrapper>.header,
 .btn-primary,
 .btn-primary:hover {
- background-color:#5b6770
+ background-color:#1a77d5
 }
 
 #main-menu {
@@ -143,7 +143,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 }
 
 #main .menu-wrapper .spacer {
-    background: #5b6770;
+    background: #1a77d5;
     height: 1px;
 }
 
@@ -163,10 +163,10 @@ header #header-bar #header-top-notice strong.notice-badge {
 #board-info h1 {
  margin:25px 0 0 95px;
  border-bottom:1px solid;
- border-color: #5b6770
+ border-color: #1a77d5
 }
 
-#board-info #board-info-bottom a {color:#5b6770}
+#board-info #board-info-bottom a {color:#1a77d5}
 
 #board-info h1>a {
     font-weight: 1500;
@@ -175,11 +175,11 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #board-info h1>a:nth-child(1) {
     font-size: 40px;
-    color: #5b6770
+    color: #1a77d5
 }
 
 #board-info h1>a:hover {
-    color: #5b6770;
+    color: #1a77d5;
     font-weight: 1500;
     transition: all 500ms ease-in-out
 }
@@ -250,7 +250,7 @@ margin: -40px 0 0 3px;
  padding:3px 5px;
  justify-content:center;
  align-items:center;
- background-color:#5b6770
+ background-color:#1a77d5
 }
 
 /* 댓글수 및 닉네임 색상 */
@@ -260,7 +260,7 @@ margin: -40px 0 0 3px;
 #main .menu-wrapper>a>em,
 #main .menu-wrapper>a>i.fa.fa-square,
 header {
- color:#5b6770
+ color:#1a77d5
 }
 
 
@@ -336,7 +336,7 @@ span.a-badge i.fa.fa-star { animation: rotation 2s infinite; }
 
 /* 프사 메뉴 */
 #board-info #board-info-bottom a {
-    color: #5b6770;
+    color: #1a77d5;
     font-weight: 400;
     font-size: 12px;
     position: relative;
@@ -412,7 +412,7 @@ header .row>div:nth-child(1)>a img {
 .reply-header .time,
 a:hover,
 header #header-bar a.dropdown-toggle {
-    color:#5b6770
+    color:#1a77d5
 }
 a {
     color:#333333
@@ -424,16 +424,16 @@ a {
 /* 페이지 버튼 */
 .pagination>li>a,
 .pagination>li>span {
-    color: #5b6770;
-    border-color: #5b6770;
+    color: #1a77d5;
+    border-color: #1a77d5;
 }
 
 .pagination>.active>a:hover,
 .pagination>.active>a {
     color: white;
-    border-color: #5b6770;
+    border-color: #1a77d5;
     border-radius: 5px 0px 0px 5px;
-    background-color: #5b6770;
+    background-color: #1a77d5;
 }
 
 .pagination>li>a:hover,
@@ -442,8 +442,8 @@ a {
 .pagination>.active>span:hover,
 .pagination>.active>span:focus {
     color: white;
-    border-color: #5b6770;
-    background-color: #5b6770;
+    border-color: #1a77d5;
+    background-color: #1a77d5;
 }
 
 
