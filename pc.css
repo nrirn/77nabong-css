@@ -143,7 +143,7 @@ header #header-bar>.row {
 #article-content-wrapper>.header{
   background-color:#70b7ff;
   border-radius: 10px 10px 0px 0px;
-  border-color: #70b7ff
+  border-color: #70b7ff;
   color: #808080 !important; 
 }
 
@@ -176,7 +176,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #main .menu-wrapper>.header,
 .btn-primary,
 .btn-primary:hover {
- background-color:#70b7ff
+ background-color:#70b7ff;
  color: #808080 !important; 
 }
 
@@ -311,7 +311,7 @@ header {
 /* 닉네임 폭 및 정렬 */
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
   width: 120px !important;
-  align-items:left;
+  align-items:left
 }
 
 
