@@ -4,7 +4,12 @@
   font-weight: normal; 
   font-style: normal; 
 }
-
+@font-face {
+    font-family: 'BRRA_R';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/BRRA_R.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
   font-family: 'Cafe24Ohsquare';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
@@ -170,7 +175,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 #board-info h1>a {
     font-weight: 1500;
-    font-family: 'Cafe24Ohsquare';
+    font-family: 'BRRA_R';
 }
 
 #board-info h1>a:nth-child(1) {
