@@ -134,7 +134,6 @@ header #right-search-form>#right-search-btn {
 #main #main-content>div.frame,
 #main .menu-wrapper,
 header #header-bar>.row {
- color: #808080 !important; 
  border-right:none;
  border-bottom:none
 }
@@ -143,8 +142,7 @@ header #header-bar>.row {
 #article-content-wrapper>.header{
   background-color:#70b7ff;
   border-radius: 10px 10px 0px 0px;
-  border-color: #70b7ff;
-  color: #808080 !important; 
+  border-color: #70b7ff
 }
 
 
@@ -165,7 +163,7 @@ header #header-bar a.dropdown-toggle {
 header #header-bar #header-top-notice strong.notice-badge {
     background: #70b7ff;
     padding: 4px 6px;
-    color: #808080 !important; 
+    color: #808080; 
     font-weight: bold
 }
 
@@ -176,8 +174,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 #main .menu-wrapper>.header,
 .btn-primary,
 .btn-primary:hover {
- background-color:#70b7ff;
- color: #808080 !important; 
+ background-color:#70b7ff
 }
 
 #main-menu {
@@ -308,10 +305,9 @@ header {
 }
 
 
-/* 닉네임 폭 및 정렬 */
+/* 닉네임 폭 */
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
   width: 120px !important;
-  align-items:left
 }
 
 
@@ -425,10 +421,10 @@ span.a-badge i.fa.fa-star { animation: rotation 2s infinite; }
 .reply-header .time,
 a:hover,
 header #header-bar a.dropdown-toggle {
-    color:#70b7ff !important; 
+    color:#70b7ff
 }
 a {
-    color:#70b7ff !important; 
+    color:#333333
 }
 
 
