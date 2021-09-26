@@ -127,7 +127,7 @@ header #header-bar a.dropdown-toggle {
 header #header-bar #header-top-notice strong.notice-badge {
     background: #70b7ff;
     padding: 4px 6px;
-    color: #fff;
+    color: #70b7ff;
     font-weight: bold
 }
 
@@ -277,7 +277,7 @@ header {
 
 /* 게시글 배경 */
 #article-list>.article-list-row.notice {
-    background-color: #a3aaae;
+    background-color: #70b7ff;
 }
 
 #article-list>.article-list-row.hot {
@@ -408,7 +408,10 @@ header .row>div:nth-child(1)>a img {
     display: none;
 }
 
-
+/* 읽은 글 색상 코드 */
+#article-list>.article-list-row>.item>.list-title>a:visited {
+    color: #808080 !important; 
+}
 
 /* 링크 색상 */
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
