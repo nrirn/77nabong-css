@@ -193,7 +193,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 
 /* 방문자 */
 #board-info #viewers-area {
-  color: #e1261c;
+  color: #ff5200;
   font-size: 20px;
   font-family: BMEULJIRO;
   position: relative;
@@ -451,8 +451,8 @@ a {
 
 /* 하단 검색창 버튼 */
 div #article-list #boardSearchForm>input[type=text]:focus {
-    border-color: #5ae2aa;
-    box-shadow:0 0 5px #5ae2aa
+    border-color: #70b7ff;
+    box-shadow:0 0 5px #70b7ff
 }
 
 
@@ -466,7 +466,7 @@ div #article-list #boardSearchForm>input[type=text]:focus {
     display: inline-block;
     opacity: 1;
     background: url(https://nrirn.github.io/77nabong-css/gototop.gif);
-    width: 220px;
-    height: 141px;
+    width: 280px;
+    height: 180px;
     background-size: contain;
 }
