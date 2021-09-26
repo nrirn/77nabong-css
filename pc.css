@@ -466,7 +466,7 @@ div #article-list #boardSearchForm>input[type=text]:focus {
     display: inline-block;
     opacity: 1;
     background: url(https://nrirn.github.io/77nabong-css/gototop.gif);
-    width: 280px;
-    height: 180px;
+    width: 220px;
+    height: 141px;
     background-size: contain;
 }
