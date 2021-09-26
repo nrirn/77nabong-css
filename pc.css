@@ -20,7 +20,7 @@
 /* 배경 그라디언트 */
 html {
     height: auto !important;
-    background: linear-gradient(to bottom, #a3aaae, #a3aaae, #a3aaae);
+    background: linear-gradient(to bottom, #ffffff, #d0e6fc, #70b7ff);
 }
 
 body {
