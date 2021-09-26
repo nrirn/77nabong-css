@@ -134,6 +134,7 @@ header #right-search-form>#right-search-btn {
 #main #main-content>div.frame,
 #main .menu-wrapper,
 header #header-bar>.row {
+ color: #808080 !important; 
  border-right:none;
  border-bottom:none
 }
@@ -143,6 +144,7 @@ header #header-bar>.row {
   background-color:#70b7ff;
   border-radius: 10px 10px 0px 0px;
   border-color: #70b7ff
+  color: #808080 !important; 
 }
 
 
@@ -163,7 +165,7 @@ header #header-bar a.dropdown-toggle {
 header #header-bar #header-top-notice strong.notice-badge {
     background: #70b7ff;
     padding: 4px 6px;
-    color: #808080;
+    color: #808080 !important; 
     font-weight: bold
 }
 
@@ -175,6 +177,7 @@ header #header-bar #header-top-notice strong.notice-badge {
 .btn-primary,
 .btn-primary:hover {
  background-color:#70b7ff
+ color: #808080 !important; 
 }
 
 #main-menu {
@@ -422,10 +425,10 @@ span.a-badge i.fa.fa-star { animation: rotation 2s infinite; }
 .reply-header .time,
 a:hover,
 header #header-bar a.dropdown-toggle {
-    color:#70b7ff
+    color:#70b7ff !important; 
 }
 a {
-    color:#70b7ff
+    color:#70b7ff !important; 
 }
 
 
