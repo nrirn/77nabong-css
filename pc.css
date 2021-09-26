@@ -396,7 +396,26 @@ span.a-badge i.fa.fa-star { animation: rotation 2s infinite; }
 
 
 
+/* 반응형 작성자 영역 */
+#article-list>.article-list-row>.item>.list-title>.list-writer {
+    padding: 0 16px;
+    border-left: none;
+}
 
+#article-list>.article-list-row>.item>.list-title>.list-writer>span {
+	width: fit-content !important; /* 길이 반응형 */
+	height: 18px;
+}
+
+/* 로그인한 게시글 작성자 */
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span {
+	color: #606060;
+}
+
+/* 닉네임 옆 뱃지 잘리는 현상 수정 */
+#article-list>.article-list-row>.item img {
+    margin-top: -1px;
+}
 
 
 
