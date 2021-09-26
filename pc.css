@@ -20,7 +20,43 @@
 
 
 
+/* 읽은 글 색상 코드 */
+#article-list>.article-list-row>.item>.list-title>a:visited {
+    color: #808080 !important; 
+}
 
+/* 트게더 메인으로(높낮이포함) */
+header .row>div:nth-child(1)>a {
+    background-repeat: no-repeat;
+    background-image: url(https://nrirn.github.io/77nabong-css/main.png);
+    background-size: 140px;
+    width: 140px;
+    height: 50px;
+    display: block;
+    margin-top: 2em;
+    position: relative;
+    top: 8px;
+    left: 0px
+}
+
+/* 트게더 로고 on off */
+header .row>div:nth-child(1)>a img {
+    display: none;
+}
+
+/* 타이틀 이미지  */
+#board-info > h1 > a::before {
+    content: url(https://nrirn.github.io/77nabong-css/logo.png);
+    left: 500px;
+    top: 5px;
+    position: absolute;
+    top: -150px;
+    left: 302px
+}
+
+.fa-user:before {
+    display: none;
+}
 
 /* 배경 그라디언트 */
 html {
@@ -127,7 +163,7 @@ header #header-bar a.dropdown-toggle {
 header #header-bar #header-top-notice strong.notice-badge {
     background: #70b7ff;
     padding: 4px 6px;
-    color: #70b7ff;
+    color: #808080;
     font-weight: bold
 }
 
@@ -269,9 +305,10 @@ header {
 }
 
 
-/* 닉네임 폭 */
+/* 닉네임 폭 및 정렬 */
 #article-list>.article-list-row>.item>.list-title>.list-writer>span {
   width: 120px !important;
+  align-items:left;
 }
 
 
@@ -375,43 +412,8 @@ span.a-badge i.fa.fa-star { animation: rotation 2s infinite; }
 
 
 
-/* 트게더 메인으로(높낮이포함) */
-header .row>div:nth-child(1)>a {
-    background-repeat: no-repeat;
-    background-image: url(https://nrirn.github.io/77nabong-css/main.png);
-    background-size: 140px;
-    width: 140px;
-    height: 50px;
-    display: block;
-    margin-top: 2em;
-    position: relative;
-    top: 8px;
-    left: 0px
-}
 
-/* 트게더 로고 on off */
-header .row>div:nth-child(1)>a img {
-    display: none;
-}
 
-/* 타이틀 이미지  */
-#board-info > h1 > a::before {
-    content: url(https://nrirn.github.io/77nabong-css/logo.png);
-    left: 500px;
-    top: 5px;
-    position: absolute;
-    top: -150px;
-    left: 302px
-}
-
-.fa-user:before {
-    display: none;
-}
-
-/* 읽은 글 색상 코드 */
-#article-list>.article-list-row>.item>.list-title>a:visited {
-    color: #808080 !important; 
-}
 
 /* 링크 색상 */
 #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged,
@@ -423,7 +425,7 @@ header #header-bar a.dropdown-toggle {
     color:#70b7ff
 }
 a {
-    color:#333333
+    color:#70b7ff
 }
 
 
